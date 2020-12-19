@@ -1,8 +1,9 @@
-package com.devdanielleguizamon.piloto01
+package com.devdanielleguizamon.piloto01.presentation
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.devdanielleguizamon.piloto01.databinding.ActivitySplashBinding
+import com.devdanielleguizamon.piloto01.presentation.extensions.onTextChange
 
 class SplashActivity : AppCompatActivity() {
 
@@ -14,6 +15,10 @@ class SplashActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.txvTitleSplash.text = TEXT
+
+        binding.editText.onTextChange {
+
+        }
     }
 
     companion object {
